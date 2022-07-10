@@ -10,6 +10,9 @@ server.get('/poradniki', function(request, response){
 server.get('/forum', function(request, response){
     response.sendFile(__dirname + '/public/forum.html');
 });
+server.get('/pobieranie', function(request, response){
+    response.sendFile(__dirname + '/public/pobieranie.html');
+});
 
 server.listen(config.port);
 console.log('Server started on port:' , config.port)
