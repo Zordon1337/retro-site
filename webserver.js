@@ -7,6 +7,9 @@ server.get('/', function(request, response){
 server.get('/poradniki', function(request, response){
     response.sendFile(__dirname + '/public/poradniki.html');
 });
+server.get('/forum', function(request, response){
+    response.sendFile(__dirname + '/public/forum.html');
+});
 
 server.listen(config.port);
 console.log('Server started on port:' , config.port)
