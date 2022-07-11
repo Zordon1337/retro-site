@@ -13,6 +13,9 @@ server.get('/forum', function(request, response){
 server.get('/pobieranie', function(request, response){
     response.sendFile(__dirname + '/public/pobieranie.html');
 });
+server.get('/websdr', function(request, response){
+    response.sendFile(__dirname + '/public/websdr.html');
+});
 
 server.listen(config.port);
 console.log('Server started on port:' , config.port)
